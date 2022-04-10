@@ -3,7 +3,7 @@ LABEL maintainer="tomekkleszcz"
 
 # Install necessary packages
 RUN apt-get update
-RUN apt-get upgrade
+RUN apt-get upgrade -y
 RUN apt-get install -y git tclsh pkg-config cmake libssl-dev build-essential zlib1g-dev
 
 # Build patched version of srt by @rationalsa
